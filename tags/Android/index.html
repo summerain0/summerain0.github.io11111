@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.7.5">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="https://summerain0.github.io/friends/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://summerain0.github.io/tags/android/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,19 +32,17 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>友情链接 - summerain0的个人博客</title>
+  <title>标签：Android - summerain0的个人博客</title>
   <meta name="keywords" content="博客,blog,个人博客,summerain0">
   <meta desc name="description" content="这是summerain0的个人博客 - summerain0 - summerain0的个人博客">
   
 <meta property="og:type" content="website">
-<meta property="og:title" content="友情链接">
-<meta property="og:url" content="https://summerain0.github.io/friends/index.html">
+<meta property="og:title" content="summerain0的个人博客">
+<meta property="og:url" content="https://summerain0.github.io/tags/Android/index.html">
 <meta property="og:site_name" content="summerain0的个人博客">
 <meta property="og:description" content="这是summerain0的个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-09-02T11:10:49.102Z">
-<meta property="article:modified_time" content="2022-09-02T11:10:49.102Z">
 <meta property="article:author" content="summerain0">
 <meta property="article:tag" content="博客,blog,个人博客,summerain0">
 <meta name="twitter:card" content="summary">
@@ -2503,7 +2501,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper friends search' style="display: none;">
+      <div id="none" class='cover-wrapper  search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.dujin.org/bing/1920.php"></div>
 
@@ -2541,269 +2539,264 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-  <article id="friends" class="md post article article-entry l_friends white-box reveal shadow floatable blur article-type-friends" itemscope itemprop="blogPost">
+  
     
-
-
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+          
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://summerain0.github.io/2022/09/03/activity-uncaught-exception/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="summerain0的个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="summerain0的个人博客">
+    <meta itemprop="description" content="这是summerain0的个人博客">
+  </span>
+  
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/09/03/activity-uncaught-exception/"  itemprop="url">
+        Android自定义全局异常捕获——Activity形式
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
-    
-      <h1 class="title" itemprop="name headline">
-        友情链接
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100" class="lazyload" data-srcset="https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">summerain0</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-02T19:10:49+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2022-09-02 19:10:10</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-<div class="new-meta-item browse">
-  <a class='notlink'>
-    <p>
-      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="busuanzi_value_page_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
+        前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下手.因此,需要全局异常捕获.也就是对未知异常,程序员没有处理的异常进行处理,记录等便于分析查找原因，而一个美观的崩溃提示则可以大大加分 。
+效果展示效果展示
+
+源码MyUncaughtExceptio...
       
-      <span>次浏览</span>
-    </p>
-  </a>
-</div>
-
-
-          
-        
-          
-            
-  <div class="new-meta-item wordcount">
-    <a class='notlink'>
-      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：0 字</p>
-    </a>
+    
   </div>
-  <div class="new-meta-item readtime">
-    <a class='notlink'>
-      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1 分钟</p>
-    </a>
-  </div>
-
-
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100">
+            <meta itemprop="name" content="summerain0">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-09-03T23:57:30+08:00">2022-09-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/Android/">Android</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/Android/" itemprop="url"><span itemprop="name">Android</span></a>
+            </span>
           
         
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-    
-    
       
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            技术大佬
-          </h2>
-          
-          
-            <div class='friend-content'>
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://blog.mucute.cn/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjNUU3MkU0MjIiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIi8+PGc+PGcgb3BhY2l0eT0iMC4zIj48cGF0aCBmaWxsPSIjNUU3MkU0IiBkPSJNNzQuMzksMzIuODZjLTAuOTgtMS43LTMuMzktMy4wOS01LjM1LTMuMDlINDUuNjJjLTEuOTYsMC00LjM3LDEuMzktNS4zNSwzLjA5TDI4LjU3LDUzLjE1Yy0wLjk4LDEuNy0wLjk4LDQuNDgsMCw2LjE3bDExLjcxLDIwLjI5YzAuOTgsMS43LDMuMzksMy4wOSw1LjM1LDMuMDloMjMuNDNjMS45NiwwLDQuMzctMS4zOSw1LjM1LTMuMDlMODYuMSw1OS4zMmMwLjk4LTEuNywwLjk4LTQuNDgsMC02LjE3TDc0LjM5LDMyLjg2eiIvPjwvZz48ZyBvcGFjaXR5PSIwLjgiPjxwYXRoIGZpbGw9IiM1RTcyRTQiIGQ9Ik02Mi4wNCwyMC4zOWMtMC45OC0xLjctMy4zOS0zLjA5LTUuMzUtMy4wOUgzMS43M2MtMS45NiwwLTQuMzcsMS4zOS01LjM1LDMuMDlMMTMuOSw0Mi4wMWMtMC45OCwxLjctMC45OCw0LjQ4LDAsNi4xN2wxMi40OSwyMS42MmMwLjk4LDEuNywzLjM5LDMuMDksNS4zNSwzLjA5aDI0Ljk3YzEuOTYsMCw0LjM3LTEuMzksNS4zNS0zLjA5bDEyLjQ5LTIxLjYyYzAuOTgtMS43LDAuOTgtNC40OCwwLTYuMTdMNjIuMDQsMjAuMzl6Ii8+PC9nPjwvZz48L3N2Zz4='/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">沐川的博客</p>
-                      
-                      
-                    </div>
-                  </a>
-                
-              
-            </div>
-          
+        <div>
+          <a class='readmore' href='/2022/09/03/activity-uncaught-exception/' itemprop="url">
+            阅读全文
+          </a>
         </div>
-      
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            服务型网站
-          </h2>
-          
-          
-            <div class='friend-content'>
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://yunchu.cxoip.com/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='https://yunchu.cxoip.com/img/icon.png?time=1662110439'/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">云储</p>
-                      
-                      
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags">简便高效的服务端在线托管</p>
-                        </div>
-                      
-                    </div>
-                  </a>
-                
-              
-            </div>
-          
-        </div>
-      
-    
-    <br><br>
-    
-    
-
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-02T19:10:49+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022-09-02 19:10:10</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
-    
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        
-        <div class='hoverbox'>
-          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
-          <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC/ElEQVR42u3aS27DMAwFwNz/0u0+rWH+nITxaBfAlqnJ5oHU48f6dz0QgAEDBgwYMGtgHsX1Z8Pk88/vZffrvne0DxgwYMCAAQNmH0w4AA09f1jYwe8udPR5MGDAgAEDBsxemNMAFHz+DCR7kOpz6fOAAQMGDBgwYG4LMxW4qvuBAQMGDBgwYMBcHfCyjadoMAQDBgwYMGDA3Bem2giKAryqMfX2SSQYMGDAgAED5mUw2RUt7F2/y+cBAwYMGDBgwKyB6a5sY6j6/tRA7/Q8YMCAAQMGDJg1MNWAlC0w+351YFetHwwYMGDAgAGzF6Y6qOo2hqaDXRQsPXADAwYMGDBgwHwsTLXxlC1gCiwLEg6aYMCAAQMGDJh1MOkLNhcfvNxo6g7wwIABAwYMGDBrYKoDs2oB0cFa96DZOsCAAQMGDBgw+2CyjZxuMCw3kKIHa34PDBgwYMCAAbMHJnpBKHuAbACb/l72XGDAgAEDBgyY74GpDrqmg9hUoyx8DjBgwIABAwbMGphuIIs2kqoDsOkAeVo3GDBgwIABA2YNTPdCTztQBQNd9UJRujEGBgwYMGDAgPkamOkB2vTz6YtBZ/uAAQMGDBgwYNbCdANVdJ9qgMxeeErXBwYMGDBgwIBZA5MeSA0Fv+4FpOx3w384GDBgwIABA2YdTHUwNnXxZ2og130eDBgwYMCAAbMPplrQ1KCrepGpG1DTjSowYMCAAQMGzMfCdIPaVYGs2pBKN9bAgAEDBgwYMGthugfpBscuWHcQCAYMGDBgwIDZA9NdVwW0akMrCw4GDBgwYMCA2QvTDUpXFZxtkGUhwgM3MGDAgAEDBszHw1QDXTewdeGjf0AYEgwYMGDAgAGzFqYaoLLA2SDYvRgUBgcDBgwYMGDA3B6mWuhUw2ps4AYGDBgwYMCAuQ3MVCDrfq880AMDBgwYMGDArIWZbix1A1k1qFUvKIEBAwYMGDBg9sFcHpySwS964Gpdh/uCAQMGDBgwYNbAWGDAgAEDBgyYZesXEthpUiN85n8AAAAASUVORK5CYII=">
-          </div>
-        </div>
-      
-    
-  </div>
-</div>
-
-
-
-        
       
     </div>
-    <!-- Custom Files bottomMeta begin -->
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://summerain0.github.io/2022/09/03/file-uncaught-exception/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="summerain0的个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="summerain0的个人博客">
+    <meta itemprop="description" content="这是summerain0的个人博客">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
     
-    <!-- Custom Files bottomMeta end -->
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/09/03/file-uncaught-exception/"  itemprop="url">
+        自定义全局异常捕捉——保存至本地
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下手.因此,需要全局异常捕获.也就是对未知异常,程序员没有处理的异常进行处理,记录等便于分析查找原因.
+源码MyUncaughtExceptionHandler.java1234567891011121...
+      
+    
   </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100">
+            <meta itemprop="name" content="summerain0">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-09-03T23:57:30+08:00">2022-09-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/Android/">Android</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/Android/" itemprop="url"><span itemprop="name">Android</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/09/03/file-uncaught-exception/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
 
+</div>
 
-  </article>
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://summerain0.github.io/2022/09/03/android-package-info-compat/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="summerain0的个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="summerain0的个人博客">
+    <meta itemprop="description" content="这是summerain0的个人博客">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2022/09/03/android-package-info-compat/"  itemprop="url">
+        还在用老办法获取版本号或者签名信息吗？不如试试PackageInfoCompat吧！
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        前言之前的很久时间，我们都是使用以下的方式获取应用的版本号，但在Android SDK 28中，谷歌弃用了该方式，推荐使用getLongVersionCode()
+12345678910public int getSelfVersionCode(Context context)&#123;        try &#123;            PackageManager package...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+          
+          <a class='avatar' href='/'><img src='https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100'></a>
+          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <meta itemprop="image" content="https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100">
+            <meta itemprop="name" content="summerain0">
+            <meta itemprop="url" content="/">
+          </span>
+        
+        <time itemprop="dateCreated datePublished" datetime="2022-09-03T22:14:20+08:00">2022-09-03</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/Android/">Android</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+            </span>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/%E6%95%99%E7%A8%8B/Android/" itemprop="url"><span itemprop="name">Android</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2022/09/03/android-package-info-compat/' itemprop="url">
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
 
+</div>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/friends/index.html#comments">
-    </span>
-    <p ct><i class='fas fa-comments'></i> 评论</p>
     
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2812,6 +2805,97 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
+<section class="widget blogger desktop pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://q.qlogo.cn/g?b=qq&nk=2351602624&s=100'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>summerain0</h2>
+        
+        
+        
+          <p><span id="jinrishici-sentence">summerain0的个人博客</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:2351602624@qq.com"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/summerain0"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://wpa.qq.com/msgrd?v=3&amp;uin=2351602624&amp;site=qq&amp;menu=yes"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
+
+  <section class='widget desktop mobile  music'>
+    
+
+    <div class='content'>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='108079371'
+      list-folded='true'>
+    </meting-js>
+  
+
+
+    </div>
+  </section>
+
+
     
   
 
@@ -2883,35 +2967,103 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+  
+    
+    
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2022/09/03/activity-uncaught-exception/"><div class="item"><time>2022-09-04</time><span>教程</span></div><span>Android自定义全局异常捕获——Activity形式</span></a></li><li><a class="widget-last" href="/2022/09/03/file-uncaught-exception/"><div class="item"><time>2022-09-04</time><span>教程</span></div><span>自定义全局异常捕捉——保存至本地</span></a></li><li><a class="widget-last" href="/2022/09/03/springboot-mybatis-config/"><div class="item"><time>2022-09-03</time><span>教程</span></div><span>SpringBoot的MyBatis简单配置</span></a></li><li><a class="widget-last" href="/2022/09/02/jetbrains-education-license/"><div class="item"><time>2022-09-03</time><span>教程</span></div><span>什么？你是学生？还不快来白嫖JetBrains全家桶？</span></a></li><li><a class="widget-last" href="/2022/09/03/android-package-info-compat/"><div class="item"><time>2022-09-03</time><span>教程</span></div><span>还在用老办法获取版本号或者签名信息吗？不如试试PackageInfoCompat吧！</span></a></li></ul>
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>7 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
+
+
+      
+        <div class="webinfo-item">
+          <div>本站总字数：</div>
+          <div>3.5k 字</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站访客数：</div>
+          
+          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>本站总访问量：</div>
+          
+          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
+          
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          <div id="last-update-show">2022-09-04 日</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky pjax">
-
-  
-  
-
-
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
-
-  
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3957,7 +4109,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"友情链接","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://summerain0.github.io/friends/index.html"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://summerain0.github.io/friends/index.html","wordCount":0,"datePublished":"2022-09-02T11:10:49.102Z","dateModified":"2022-09-02T11:10:49.102Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/tags/Android/","name":"Android"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

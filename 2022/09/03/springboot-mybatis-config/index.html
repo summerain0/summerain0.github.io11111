@@ -44,7 +44,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-09-03T05:58:01.000Z">
-<meta property="article:modified_time" content="2022-09-03T06:36:56.268Z">
+<meta property="article:modified_time" content="2022-09-03T15:59:26.841Z">
 <meta property="article:author" content="summerain0">
 <meta property="article:tag" content="SpringBoot">
 <meta property="article:tag" content="MyBatis">
@@ -1792,7 +1792,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1662187334651),
+    lastupdate: new Date(1662221861863),
     sidebar: {
       for_page: ["blogger","music","category","tagcloud","lastupdate","webinfo"],
       for_post: ["toc","category","tagcloud"],
@@ -2674,7 +2674,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="2-4-提供接口"><a href="#2-4-提供接口" class="headerlink" title="2.4 提供接口"></a>2.4 提供接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TestController</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> IUserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@RequestMapping(&quot;/test&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> userService.findById(<span class="number">3</span>).toString();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">setUserService</span><span class="params">(IUserService userService)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.userService = userService;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-5-测试结果"><a href="#2-5-测试结果" class="headerlink" title="2.5 测试结果"></a>2.5 测试结果</h3><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" href='/../image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png' data-fancybox='default' data-caption='运行结果'><img fancybox itemprop="contentUrl" src="/../image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png" class="lazyload" data-srcset="/../image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="运行结果"></a><span class='image-caption'>运行结果</span></div></div>
+<h3 id="2-5-测试结果"><a href="#2-5-测试结果" class="headerlink" title="2.5 测试结果"></a>2.5 测试结果</h3><div galleryFlag itemscope itemtype="http://schema.org/ImageGallery" class="gallery " data-group='default'><div class='fancybox'><a class='fancybox' pjax-fancybox itemscope itemtype="http://schema.org/ImageObject" itemprop="url" href='/../assets/image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png' data-fancybox='default' data-caption='运行结果'><img fancybox itemprop="contentUrl" src="/../assets/image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png" class="lazyload" data-srcset="/../assets/image/springboot-mybatis-config/%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="运行结果"></a><span class='image-caption'>运行结果</span></div></div>
 
 <h2 id="3-常见问题"><a href="#3-常见问题" class="headerlink" title="3. 常见问题"></a>3. 常见问题</h2><h3 id="3-1-找不到Mapper？"><a href="#3-1-找不到Mapper？" class="headerlink" title="3.1 找不到Mapper？"></a>3.1 找不到Mapper？</h3><p>在启动类加入@MapperScan(“com.summerain0.cloud.system.mapper”)即可</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@MapperScan(&quot;com.summerain0.cloud.system.mapper&quot;)</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CloudApplication</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        SpringApplication.run(CloudApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -2707,7 +2707,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               <div class="license-meta-item">
                 <div class="license-meta-title">更新于</div>
-                <div class="license-meta-text">2022-09-03 14:36:26</div>
+                <div class="license-meta-text">2022-09-03 23:59:84</div>
               </div>
               
               
@@ -2732,10 +2732,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-03T14:36:56+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-03T23:59:26+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022-09-03 14:36:26</p>
+    <p>更新于：2022-09-03 23:59:84</p>
   </a>
 </div>
 
@@ -2821,6 +2821,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
+        <a class='prev' href='/2022/09/03/jetpack-compose-swipe-refresh-layout/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android Compose - 官方SwipeRefreshLayout（下拉刷新）</p>
+          <p class='content'>Demo
+
+引入依赖1234567repositories &#123;    mavenCentral()&#125;dependencies &#123;    implementation...</p>
+        </a>
+      
       
         <a class='next' href='/2022/09/02/jetbrains-education-license/'>
           <p class='title'>什么？你是学生？还不快来白嫖JetBrains全家桶？<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
@@ -2890,7 +2897,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/%E6%95%99%E7%A8%8B/" href="/categories/%E6%95%99%E7%A8%8B/"
             active-action="action-categoriesE69599E7A88B"
-            ><div class='name'>教程</div><div class='badge'>(2)</div></a></li>
+            ><div class='name'>教程</div><div class='badge'>(6)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%99%E7%A8%8B/Android/" href="/categories/%E6%95%99%E7%A8%8B/Android/"
+            active-action="action-categoriesE69599E7A88BAndroid"
+            ><div class='name'>Android</div><div class='badge'>(3)</div></a></li>
+        
+          <li><a class="flat-box child"
+            title="/categories/%E6%95%99%E7%A8%8B/Jetpack-Compose/" href="/categories/%E6%95%99%E7%A8%8B/Jetpack-Compose/"
+            active-action="action-categoriesE69599E7A88BJetpack-Compose"
+            ><div class='name'>Jetpack Compose</div><div class='badge'>(1)</div></a></li>
         
           <li><a class="flat-box child"
             title="/categories/%E6%95%99%E7%A8%8B/SpringBoot/" href="/categories/%E6%95%99%E7%A8%8B/SpringBoot/"
@@ -2920,7 +2937,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/JetBrains/" style="font-size: 14px; color: #999">JetBrains</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 14px; color: #999">SpringBoot</a> <a href="/tags/%E7%99%BD%E5%AB%96/" style="font-size: 14px; color: #999">白嫖</a>
+      <a href="/tags/Android/" style="font-size: 24px; color: #555">Android</a> <a href="/tags/JetBrains/" style="font-size: 14px; color: #999">JetBrains</a> <a href="/tags/Jetpack-Compose/" style="font-size: 14px; color: #999">Jetpack Compose</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 14px; color: #999">SpringBoot</a> <a href="/tags/%E7%99%BD%E5%AB%96/" style="font-size: 14px; color: #999">白嫖</a>
     </div>
   </section>
 
@@ -4013,7 +4030,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/","name":"教程"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":3,"item":{"@id":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/","name":"SpringBoot的MyBatis简单配置"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot的MyBatis简单配置","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/","wordCount":0,"datePublished":"2022-09-03T05:58:01.000Z","dateModified":"2022-09-03T06:36:56.268Z","articleSection":"教程","keywords":"SpringBoot,MyBatis","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/","name":"教程"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/SpringBoot/","name":"SpringBoot"}},{"@type":"ListItem","position":3,"item":{"@id":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/","name":"SpringBoot的MyBatis简单配置"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"SpringBoot的MyBatis简单配置","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://summerain0.github.io/2022/09/03/springboot-mybatis-config/","wordCount":0,"datePublished":"2022-09-03T05:58:01.000Z","dateModified":"2022-09-03T15:59:26.841Z","articleSection":"教程","keywords":"SpringBoot,MyBatis","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

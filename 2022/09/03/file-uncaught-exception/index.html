@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://summerain0.github.io/friends/"/>
+  <link rel="canonical" href="https://summerain0.github.io/2022/09/03/file-uncaught-exception/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -32,21 +32,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>友情链接 - summerain0的个人博客</title>
-  <meta name="keywords" content="博客,blog,个人博客,summerain0">
+  <title>自定义全局异常捕捉——保存至本地 - summerain0的个人博客</title>
+  <meta name="keywords" content="Android,博客,blog,个人博客,summerain0">
   <meta desc name="description" content="这是summerain0的个人博客 - summerain0 - summerain0的个人博客">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="友情链接">
-<meta property="og:url" content="https://summerain0.github.io/friends/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="自定义全局异常捕捉——保存至本地">
+<meta property="og:url" content="https://summerain0.github.io/2022/09/03/file-uncaught-exception/index.html">
 <meta property="og:site_name" content="summerain0的个人博客">
-<meta property="og:description" content="这是summerain0的个人博客">
+<meta property="og:description" content="前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下手.因此,需要全局异常捕获.也就是对未知异常,程序员没有处理的异常进行处理,记录等便于分析查找原因. 源码MyUncaughtExceptionHandler.java1234567891011121314">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-09-02T11:10:49.102Z">
-<meta property="article:modified_time" content="2022-09-02T11:10:49.102Z">
+<meta property="article:published_time" content="2022-09-03T15:57:30.000Z">
+<meta property="article:modified_time" content="2022-09-03T16:03:34.516Z">
 <meta property="article:author" content="summerain0">
-<meta property="article:tag" content="博客,blog,个人博客,summerain0">
+<meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2503,7 +2503,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper friends search' style="display: none;">
+      <div id="none" class='cover-wrapper post search' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://api.dujin.org/bing/1920.php"></div>
 
@@ -2542,8 +2542,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  <article id="friends" class="md post article article-entry l_friends white-box reveal shadow floatable blur article-type-friends" itemscope itemprop="blogPost">
-    
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://summerain0.github.io/2022/09/03/file-uncaught-exception/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="summerain0的个人博客">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="summerain0的个人博客">
+    <meta itemprop="description" content="这是summerain0的个人博客">
+  </span>
+  
 
 
   
@@ -2556,7 +2564,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        友情链接
+        自定义全局异常捕捉——保存至本地
       </h1>
       <div class='new-meta-box'>
         
@@ -2573,14 +2581,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/">教程</a><span class="sep"></span><a class="category-link" href="/categories/%E6%95%99%E7%A8%8B/Android/">Android</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%99%E7%A8%8B/" itemprop="url"><span itemprop="name">教程</span></a>
+      </span>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%99%E7%A8%8B/Android/" itemprop="url"><span itemprop="name">Android</span></a>
+      </span>
+    
+  </div>
+
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-02T19:10:49+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-09-03T23:57:30+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2022-09-02 19:10:10</p>
+    <p>发布于：2022-09-03 23:57:00</p>
   </a>
 </div>
 
@@ -2610,13 +2632,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：0 字</p>
+      <p>字数：769 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
     <a class='notlink'>
       <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
-      <p>时长：1 分钟</p>
+      <p>时长：4 分钟</p>
     </a>
   </div>
 
@@ -2631,74 +2653,61 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 
 
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下手.因此,需要全局异常捕获.也就是对未知异常,程序员没有处理的异常进行处理,记录等便于分析查找原因.</p>
+<h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><h3 id="MyUncaughtExceptionHandler-java"><a href="#MyUncaughtExceptionHandler-java" class="headerlink" title="MyUncaughtExceptionHandler.java"></a>MyUncaughtExceptionHandler.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> android.content.Context;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageInfo;</span><br><span class="line"><span class="keyword">import</span> android.content.pm.PackageManager;</span><br><span class="line"><span class="keyword">import</span> android.os.Build;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.File;</span><br><span class="line"><span class="keyword">import</span> java.io.FileOutputStream;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.PrintWriter;</span><br><span class="line"><span class="keyword">import</span> java.io.StringWriter;</span><br><span class="line"><span class="keyword">import</span> java.io.Writer;</span><br><span class="line"><span class="keyword">import</span> java.lang.reflect.Field;</span><br><span class="line"><span class="keyword">import</span> java.text.SimpleDateFormat;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">import</span> java.util.Locale;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ClassName</span> MyUncaughtExceptionHandler</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> 全局捕捉异常</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> summerain0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span> 2020/9/11 15:31</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyUncaughtExceptionHandler</span> <span class="keyword">implements</span> <span class="title class_">Thread</span>.UncaughtExceptionHandler &#123;</span><br><span class="line">    <span class="comment">// 单例</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> MyUncaughtExceptionHandler myUncaughtExceptionHandler;</span><br><span class="line">    <span class="comment">// 上下文</span></span><br><span class="line">    <span class="keyword">private</span> Context context;</span><br><span class="line">    <span class="comment">// 会输出到文件中</span></span><br><span class="line">    <span class="keyword">private</span> StringBuilder stringBuilder;</span><br><span class="line">    <span class="comment">// 系统异常处理器</span></span><br><span class="line">    <span class="keyword">private</span> Thread.UncaughtExceptionHandler defaultUncaughtExceptionHandler;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyUncaughtExceptionHandler</span><span class="params">(Context context)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.context = context;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 获取单例</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">synchronized</span> MyUncaughtExceptionHandler <span class="title function_">getInstance</span><span class="params">(Context ctx)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (myUncaughtExceptionHandler == <span class="literal">null</span>) &#123;</span><br><span class="line">            myUncaughtExceptionHandler = <span class="keyword">new</span> <span class="title class_">MyUncaughtExceptionHandler</span>(ctx);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> myUncaughtExceptionHandler;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 初始化</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">init</span><span class="params">()</span> &#123;</span><br><span class="line">        defaultUncaughtExceptionHandler = Thread.getDefaultUncaughtExceptionHandler();</span><br><span class="line">        Thread.setDefaultUncaughtExceptionHandler(<span class="built_in">this</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">uncaughtException</span><span class="params">(Thread thread, Throwable throwable)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (throwable == <span class="literal">null</span>) &#123;</span><br><span class="line">            defaultUncaughtExceptionHandler.uncaughtException(thread, throwable);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建集合对象</span></span><br><span class="line">        stringBuilder = <span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 记录时间</span></span><br><span class="line">        <span class="type">SimpleDateFormat</span> <span class="variable">simpleDateFormat</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SimpleDateFormat</span>(<span class="string">&quot;yyyy-MM-dd_HH:mm:ss.SSS&quot;</span>, Locale.getDefault());</span><br><span class="line">        <span class="type">String</span> <span class="variable">date</span> <span class="operator">=</span> simpleDateFormat.format(<span class="keyword">new</span> <span class="title class_">Date</span>());</span><br><span class="line">        addMessage(<span class="string">&quot;崩溃时间&quot;</span>, date);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 记录应用版本信息</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">PackageManager</span> <span class="variable">pm</span> <span class="operator">=</span> context.getPackageManager();</span><br><span class="line">            <span class="type">PackageInfo</span> <span class="variable">pi</span> <span class="operator">=</span> pm.getPackageInfo(context.getPackageName(), PackageManager.GET_ACTIVITIES);</span><br><span class="line">            addMessage(<span class="string">&quot;版本名&quot;</span>, pi.versionName);</span><br><span class="line">            addMessage(<span class="string">&quot;版本号&quot;</span>, pi.versionCode);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (PackageManager.NameNotFoundException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            addMessage(<span class="string">&quot;error&quot;</span>, <span class="string">&quot;记录版本信息失败！&quot;</span> + e.getMessage());</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 记录设备信息</span></span><br><span class="line">        Field[] fields = Build.class.getDeclaredFields();</span><br><span class="line">        <span class="keyword">for</span> (Field field : fields) &#123;</span><br><span class="line">            <span class="keyword">try</span> &#123;</span><br><span class="line">                field.setAccessible(<span class="literal">true</span>);</span><br><span class="line">                <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> field.get(<span class="literal">null</span>);</span><br><span class="line">                <span class="keyword">if</span> (obj != <span class="literal">null</span>) &#123;</span><br><span class="line">                    addMessage(field.getName(), obj);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">catch</span> (IllegalAccessException e) &#123;</span><br><span class="line">                e.printStackTrace();</span><br><span class="line">                addMessage(<span class="string">&quot;error&quot;</span>, <span class="string">&quot;记录设备信息失败！&quot;</span> + e.getMessage());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 添加分隔符</span></span><br><span class="line">        addMessage(<span class="literal">null</span>, <span class="string">&quot;==============================================================&quot;</span>);</span><br><span class="line">        addMessage(<span class="literal">null</span>, <span class="string">&quot;========================   崩溃日志   =========================&quot;</span>);</span><br><span class="line">        addMessage(<span class="literal">null</span>, <span class="string">&quot;==============================================================&quot;</span>);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 记录崩溃信息</span></span><br><span class="line">        <span class="type">Writer</span> <span class="variable">writer</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">StringWriter</span>();</span><br><span class="line">        <span class="type">PrintWriter</span> <span class="variable">printWriter</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">PrintWriter</span>(writer);</span><br><span class="line">        throwable.printStackTrace(printWriter);</span><br><span class="line">        <span class="type">Throwable</span> <span class="variable">cause</span> <span class="operator">=</span> throwable.getCause();</span><br><span class="line">        <span class="keyword">while</span> (cause != <span class="literal">null</span>) &#123;</span><br><span class="line">            cause.printStackTrace(printWriter);</span><br><span class="line">            cause = cause.getCause();</span><br><span class="line">        &#125;</span><br><span class="line">        printWriter.close();</span><br><span class="line">        addMessage(<span class="literal">null</span>, writer.toString());</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 生成路径，保存至/Android/data/包名，无需读写权限</span></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="type">File</span> <span class="variable">root</span> <span class="operator">=</span> context.getExternalFilesDir(<span class="string">&quot;log&quot;</span>);</span><br><span class="line">            <span class="type">String</span> <span class="variable">filename</span> <span class="operator">=</span> date + <span class="string">&quot;.log&quot;</span>;</span><br><span class="line">            <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(root, filename);</span><br><span class="line">            <span class="type">FileOutputStream</span> <span class="variable">fos</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">FileOutputStream</span>(file);</span><br><span class="line">            fos.write(stringBuilder.toString().getBytes());</span><br><span class="line">            fos.close();</span><br><span class="line">        &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">            defaultUncaughtExceptionHandler.uncaughtException(thread, throwable);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 添加数据</span></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">addMessage</span><span class="params">(String key, Object obj)</span> &#123;</span><br><span class="line">        <span class="comment">// 对数组做一下处理</span></span><br><span class="line">        <span class="keyword">if</span> (obj <span class="keyword">instanceof</span> String[]) &#123;</span><br><span class="line">            String[] list = (String[]) obj;</span><br><span class="line">            ArrayList&amp;lt;String&amp;gt; array = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&amp;lt;&amp;gt;(Arrays.asList(list));</span><br><span class="line">            stringBuilder.append(key).append(<span class="string">&quot;=&quot;</span>).append(array.toString()).append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 其他的都直接添加</span></span><br><span class="line">        <span class="keyword">if</span> (key == <span class="literal">null</span>) &#123;</span><br><span class="line">            stringBuilder.append(obj)</span><br><span class="line">                    .append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            stringBuilder.append(key)</span><br><span class="line">                    .append(<span class="string">&quot;=&quot;</span>)</span><br><span class="line">                    .append(obj)</span><br><span class="line">                    .append(<span class="string">&quot;\n&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="MyApplication-java"><a href="#MyApplication-java" class="headerlink" title="MyApplication.java"></a>MyApplication.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> android.app.Application;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ClassName</span> MyApplication</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Description</span> TODO</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Author</span> summerain0</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@Date</span> 2020/9/11 14:00</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyApplication</span> <span class="keyword">extends</span> <span class="title class_">Application</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">TAG</span> <span class="operator">=</span> <span class="string">&quot;MyApplication&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">onCreate</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>.onCreate();</span><br><span class="line">        <span class="comment">// 初始化异常处理器</span></span><br><span class="line">        MyUncaughtExceptionHandler.getInstance(MyApplication.<span class="built_in">this</span>).init();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="AndroidManifest-xml"><a href="#AndroidManifest-xml" class="headerlink" title="AndroidManifest.xml"></a>AndroidManifest.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">application</span></span></span><br><span class="line"><span class="tag">        <span class="attr">android:name</span>=<span class="string">&quot;.MyApplication&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">....</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">application</span>&gt;</span></span><br></pre></td></tr></table></figure>
+  </div>
+  
+  
     
-    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            技术大佬
-          </h2>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+        
           
-          
-            <div class='friend-content'>
-              
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://blog.mucute.cn/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cmVjdCBmaWxsPSIjNUU3MkU0MjIiIHdpZHRoPSIxMDAiIGhlaWdodD0iMTAwIi8+PGc+PGcgb3BhY2l0eT0iMC4zIj48cGF0aCBmaWxsPSIjNUU3MkU0IiBkPSJNNzQuMzksMzIuODZjLTAuOTgtMS43LTMuMzktMy4wOS01LjM1LTMuMDlINDUuNjJjLTEuOTYsMC00LjM3LDEuMzktNS4zNSwzLjA5TDI4LjU3LDUzLjE1Yy0wLjk4LDEuNy0wLjk4LDQuNDgsMCw2LjE3bDExLjcxLDIwLjI5YzAuOTgsMS43LDMuMzksMy4wOSw1LjM1LDMuMDloMjMuNDNjMS45NiwwLDQuMzctMS4zOSw1LjM1LTMuMDlMODYuMSw1OS4zMmMwLjk4LTEuNywwLjk4LTQuNDgsMC02LjE3TDc0LjM5LDMyLjg2eiIvPjwvZz48ZyBvcGFjaXR5PSIwLjgiPjxwYXRoIGZpbGw9IiM1RTcyRTQiIGQ9Ik02Mi4wNCwyMC4zOWMtMC45OC0xLjctMy4zOS0zLjA5LTUuMzUtMy4wOUgzMS43M2MtMS45NiwwLTQuMzcsMS4zOS01LjM1LDMuMDlMMTMuOSw0Mi4wMWMtMC45OCwxLjctMC45OCw0LjQ4LDAsNi4xN2wxMi40OSwyMS42MmMwLjk4LDEuNywzLjM5LDMuMDksNS4zNSwzLjA5aDI0Ljk3YzEuOTYsMCw0LjM3LTEuMzksNS4zNS0zLjA5bDEyLjQ5LTIxLjYyYzAuOTgtMS43LDAuOTgtNC40OCwwLTYuMTdMNjIuMDQsMjAuMzl6Ii8+PC9nPjwvZz48L3N2Zz4='/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">沐川的博客</p>
-                      
-                      
-                    </div>
-                  </a>
-                
-              
+          <div class="copyright license">
+            <div class="license-title">自定义全局异常捕捉——保存至本地</div>
+            <div class="license-link"><a href="https://summerain0.github.io/2022/09/03/file-uncaught-exception/">https://summerain0.github.io/2022/09/03/file-uncaught-exception/</a>
             </div>
-          
-        </div>
-      
-        <div class='friends-group'>
-          <br>
-          <h2 class='friend-header'>
-            服务型网站
-          </h2>
-          
-          
-            <div class='friend-content'>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">summerain0</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2022-09-03 23:57:00</div>
+              </div>
               
-                
-                  <a class='friend-card'
-                    target="_blank" rel="external noopener noreferrer" href="https://yunchu.cxoip.com/">
-                    <div class='friend-left'>
-                      
-                        <img class='avatar' src='https://yunchu.cxoip.com/img/icon.png?time=1662110439'/>
-                      
-                    </div>
-                    <div class='friend-right'>
-                      <p class="friend-name">云储</p>
-                      
-                      
-                        <div class='friend-tags-wrapper'>
-                          <p class="tags">简便高效的服务端在线托管</p>
-                        </div>
-                      
-                    </div>
-                  </a>
-                
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2022-09-04 0:03:51</div>
+              </div>
               
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text">允许规范转载</div>
+              </div>
             </div>
-          
-        </div>
+            <div class="license-statement">转载请保留本文转载地址，著作权归作者所有！</div>
+          </div>
+        
       
-    
-    <br><br>
-    
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
     
 
 
@@ -2706,10 +2715,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-02T19:10:49+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-09-04T00:03:34+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022-09-02 19:10:10</p>
+    <p>更新于：2022-09-04 0:03:51</p>
   </a>
 </div>
 
@@ -2717,6 +2726,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         
           
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Android/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Android</p></a></div>
+  <span hidden itemprop="keywords">Android</span>
+
 
         
       
@@ -2728,7 +2741,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://summerain0.github.io/2022/09/03/file-uncaught-exception/&title=自定义全局异常捕捉——保存至本地 - summerain0的个人博客&summary="
           
           >
           
@@ -2740,7 +2753,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://summerain0.github.io/2022/09/03/file-uncaught-exception/&title=自定义全局异常捕捉——保存至本地 - summerain0的个人博客&summary="
           
           >
           
@@ -2752,7 +2765,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://summerain0.github.io/friends/index.html&title=友情链接 - summerain0的个人博客&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://summerain0.github.io/2022/09/03/file-uncaught-exception/&title=自定义全局异常捕捉——保存至本地 - summerain0的个人博客&summary="
           
           >
           
@@ -2766,7 +2779,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class='hoverbox'>
           <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
           <div class='target'>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARgAAAEYCAAAAACi5bZQAAAC/ElEQVR42u3aS27DMAwFwNz/0u0+rWH+nITxaBfAlqnJ5oHU48f6dz0QgAEDBgwYMGtgHsX1Z8Pk88/vZffrvne0DxgwYMCAAQNmH0w4AA09f1jYwe8udPR5MGDAgAEDBsxemNMAFHz+DCR7kOpz6fOAAQMGDBgwYG4LMxW4qvuBAQMGDBgwYMBcHfCyjadoMAQDBgwYMGDA3Bem2giKAryqMfX2SSQYMGDAgAED5mUw2RUt7F2/y+cBAwYMGDBgwKyB6a5sY6j6/tRA7/Q8YMCAAQMGDJg1MNWAlC0w+351YFetHwwYMGDAgAGzF6Y6qOo2hqaDXRQsPXADAwYMGDBgwHwsTLXxlC1gCiwLEg6aYMCAAQMGDJh1MOkLNhcfvNxo6g7wwIABAwYMGDBrYKoDs2oB0cFa96DZOsCAAQMGDBgw+2CyjZxuMCw3kKIHa34PDBgwYMCAAbMHJnpBKHuAbACb/l72XGDAgAEDBgyY74GpDrqmg9hUoyx8DjBgwIABAwbMGphuIIs2kqoDsOkAeVo3GDBgwIABA2YNTPdCTztQBQNd9UJRujEGBgwYMGDAgPkamOkB2vTz6YtBZ/uAAQMGDBgwYNbCdANVdJ9qgMxeeErXBwYMGDBgwIBZA5MeSA0Fv+4FpOx3w384GDBgwIABA2YdTHUwNnXxZ2og130eDBgwYMCAAbMPplrQ1KCrepGpG1DTjSowYMCAAQMGzMfCdIPaVYGs2pBKN9bAgAEDBgwYMGthugfpBscuWHcQCAYMGDBgwIDZA9NdVwW0akMrCw4GDBgwYMCA2QvTDUpXFZxtkGUhwgM3MGDAgAEDBszHw1QDXTewdeGjf0AYEgwYMGDAgAGzFqYaoLLA2SDYvRgUBgcDBgwYMGDA3B6mWuhUw2ps4AYGDBgwYMCAuQ3MVCDrfq880AMDBgwYMGDArIWZbix1A1k1qFUvKIEBAwYMGDBg9sFcHpySwS964Gpdh/uCAQMGDBgwYNbAWGDAgAEDBgyYZesXEthpUiN85n8AAAAASUVORK5CYII=">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADnklEQVR42u3aQW7DMAwEwPz/0+m9QGFxSTd0O7oFSBxpdFks/Xpb0XohAAcOHDgLHLglcK9wHf/Rt+//9Pnquelzrr5XPS84cODAgQMHDtw2uBTirg2e7u/qd1eQ5YsHBw4cOHDgwIFbCncZAG8CSi/sCizdPzhw4MCBAwcO3H+FOy0gq4XmKVQ3qIMDBw4cOHDgwP03uKmDphfQHWSDAwcOHDhw4MA9Fa67kbRYrD6nekHrJvngwIEDBw4cOHBDcOlA+amf4/OCAwcOHDhw4MAtgeuuNACnF5QWmGPnBQcOHDhw4MCBWwKXBsTTgrM6AE6L1Oo+q78DBw4cOHDgwIF7Clw14FZhqhdQvZDq/5wGbXDgwIEDBw4cuC1w3Y2nG04Ly25gT4MyOHDgwIEDBw7cVrhusZiCV4vGdOCc/h4cOHDgwIEDB+6pcFWAqeDbLSynng8OHDhw4MCBA7cV7jT4pgPk6YFxup9ugAYHDhw4cODAgdsG1y0Qp4rPFLI60E6LVXDgwIEDBw4cuO1wKdDUi4JpsE4vbuzFQnDgwIEDBw4cuA/BTQFOB9oqwNQgGxw4cODAgQMHbjtc+ofpAapBtHoh3UH45cWCAwcOHDhw4MA9BK46sE4H0XcVlulFtQMwOHDgwIEDBw7cL8FVN3rXi4HVoJy+cFi9cHDgwIEDBw4cuK1w6YO6hWE1YE8XpuVgDA4cOHDgwIEDtwSuW1h2i8+0IE2DcHvADQ4cOHDgwIED9zC4tHg8BYqLxeYLj6f7BQcOHDhw4MCBewpctaDsQqRB+/biEhw4cODAgQMHbilcd7BbDcTpwLp6YSncpQM4cODAgQMHDtwyuHe40oN3B9PdgXQatMGBAwcOHDhw4LbCpYPjqUHx3QPo9NzgwIEDBw4cOHDb4cqBsLixqQFzWqC2Az84cODAgQMHDtxSuLuD691F5tQCBw4cOHDgwIHbDtddU0VkGrxPIdP9gwMHDhw4cODAbYWbCoinG68Oin+7UC0PpMGBAwcOHDhw4D4MVw28aQDu/k8ahFNwcODAgQMHDhy4p8BVA2paKE4F3ekBdHuSDw4cOHDgwIED91C4U4jT4Fzd31TQ/fG84MCBAwcOHDhwfxyuG3DTIrV6sacBGxw4cODAgQMHbjtcdVB8WjBOFaHV4NwdmIMDBw4cOHDgwG2Hmx7gdg86dVFpMXocgMGBAwcOHDhw4D4EZ9UWOHDgwIGzwIH78PoCb3D+NQgB4j4AAAAASUVORK5CYII=">
           </div>
         </div>
       
@@ -2785,14 +2798,38 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 
 
-  </article>
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2022/09/03/activity-uncaught-exception/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android自定义全局异常捕获——Activity形式</p>
+          <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
+        </a>
+      
+      
+        <a class='next' href='/2022/09/03/android-package-info-compat/'>
+          <p class='title'>还在用老办法获取版本号或者签名信息吗？不如试试PackageInfoCompat吧！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言之前的很久时间，我们都是使用以下的方式获取应用的版本号，但在Android SDK 28中，谷歌弃用了该方式，推荐使用getLongVersionCode()
+12345678910publ...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
 
   
 
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/friends/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2022/09/03/file-uncaught-exception/index.html#comments">
     </span>
     <p ct><i class='fas fa-comments'></i> 评论</p>
     
@@ -2800,6 +2837,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div id="layoutHelper-comments"></div>
 
   </article>
+
+
 
 
 
@@ -2890,9 +2929,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%BA%90%E7%A0%81"><span class="toc-text">源码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#MyUncaughtExceptionHandler-java"><span class="toc-text">MyUncaughtExceptionHandler.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#MyApplication-java"><span class="toc-text">MyApplication.java</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AndroidManifest-xml"><span class="toc-text">AndroidManifest.xml</span></a></li></ol></li></ol>
+    </div>
+  </section>
 
   
 
@@ -2931,13 +2980,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3957,7 +4007,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"友情链接","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://summerain0.github.io/friends/index.html"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://summerain0.github.io/friends/index.html","wordCount":0,"datePublished":"2022-09-02T11:10:49.102Z","dateModified":"2022-09-02T11:10:49.102Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","sameAs":["https://github.com/volantis-x"],"description":"这是summerain0的个人博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://summerain0.github.io/","name":"summerain0的个人博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/","name":"教程"}},{"@type":"ListItem","position":2,"item":{"@id":"https://summerain0.github.io/categories/教程/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"https://summerain0.github.io/2022/09/03/file-uncaught-exception/","name":"自定义全局异常捕捉——保存至本地"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"summerain0的个人博客","url":"https://summerain0.github.io/","keywords":"博客,blog,个人博客,summerain0","description":"这是summerain0的个人博客","author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/","description":"这是summerain0的个人博客"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","url":"https://summerain0.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://summerain0.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"自定义全局异常捕捉——保存至本地","description":"这是summerain0的个人博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://summerain0.github.io/2022/09/03/file-uncaught-exception/"},"author":{"@type":"Person","name":"summerain0","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://summerain0.github.io/"},"publisher":{"@type":"Organization","name":"summerain0的个人博客","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://summerain0.github.io/2022/09/03/file-uncaught-exception/","wordCount":0,"datePublished":"2022-09-03T15:57:30.000Z","dateModified":"2022-09-03T16:03:34.516Z","articleSection":"教程","keywords":"Android","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
