@@ -1793,7 +1793,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: false,
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1662284002376),
+    lastupdate: new Date(1662288775876),
     sidebar: {
       for_page: ["blogger","music","category","tagcloud","lastupdate","webinfo"],
       for_post: ["toc","category","tagcloud"],
@@ -2209,7 +2209,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
-  
+  <script>
+    const _hmt = _hmt || [];
+    (function() {
+        const hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?505248b7057bf320dd324d29eb629841";
+        const s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
   <!-- Custom Files headEnd end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
@@ -2971,8 +2979,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
       
-        <a class='next' href='/2022/09/03/activity-uncaught-exception/'>
-          <p class='title'>Android自定义全局异常捕获——Activity形式<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='next' href='/2022/09/03/file-uncaught-exception/'>
+          <p class='title'>自定义全局异常捕捉——保存至本地<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
         </a>
       
