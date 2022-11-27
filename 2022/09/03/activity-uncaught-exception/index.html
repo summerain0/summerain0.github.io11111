@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669538955762),
+    lastupdate: new Date(1669556528181),
     sidebar: {
       for_page: ["repos","blogger","music","category","tagcloud","lastupdate","webinfo"],
       for_post: ["repos","toc","category","tagcloud"],
@@ -2859,16 +2859,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/09/04/material-design-materialbutton/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android Material Design的使用（一）- MaterialButton篇</p>
-          <p class='content'>前言本系列将要介绍Material design库包含的所有控件，当前文章基于 com.google.android.material:material:1.4.0 讲解
-MaterialBut...</p>
+        <a class='prev' href='/2022/09/03/file-uncaught-exception/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>自定义全局异常捕捉——保存至本地</p>
+          <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
         </a>
       
       
-        <a class='next' href='/2022/09/03/file-uncaught-exception/'>
-          <p class='title'>自定义全局异常捕捉——保存至本地<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
+        <a class='next' href='/2022/09/03/android-package-info-compat/'>
+          <p class='title'>还在用老办法获取版本号或者签名信息吗？不如试试PackageInfoCompat吧！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言之前的很久时间，我们都是使用以下的方式获取应用的版本号，但在Android SDK 28中，谷歌弃用了该方式，推荐使用getLongVersionCode()
+12345678910publ...</p>
         </a>
       
     </div>
@@ -3796,52 +3796,29 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-      <script>
-  volantis.layoutHelper("comments",`<div id="giscus_container"></div>`)
-
-  volantis.giscus = {};
-
-  function check_giscus() {
-    if (volantis.dark.mode === "dark") {
-      volantis.giscus.Theme = 'dark';
-    } else {
-      volantis.giscus.Theme = 'light';
+      <script type="text/javascript">
+  volantis.layoutHelper("comments",`<div id="gitalk-container"></div>`)
+  function pjax_gitalk() {
+    if(!document.querySelector("#gitalk-container"))return;
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
     }
-
-    return document.getElementById("giscus_container");
+    if (document.getElementById('gitalk-container') != null) {
+      var gitalk = new Gitalk(
+        Object.assign(
+          Object.assign({"js":"https://unpkg.com/gitalk@1/dist/gitalk.min.js","clientID":"bf4429af03fb728c9298","clientSecret":"4fc8b78230d374602c822e075e605896f797407d","repo":"summerain0.github.io","owner":"summerain0","admin":["summerain0"],"path":null}, {
+            id: path,
+            distractionFreeMode: false  // Facebook-like distraction free mode
+          }),
+        pdata.commentConfig)
+      );
+      gitalk.render('gitalk-container');
+    }
   }
-
-  function pjax_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"},"repo":"summerain0/summerain0.github.io","repo-id":"R_kgDOH6xfiQ","category":"General","category-id":"DIC_kwDOH6xfic4CRK4w","mapping":"title","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN","loading":"lazy","input-position":"top","strict":"1"},pdata.commentConfig)
-    const script = document.createElement('script');
-    script.setAttribute('src', 'https://giscus.app/client.js');
-    Object.keys(cfg).forEach(k=>{
-      if (k != "theme") {
-        script.setAttribute('data-'+k, cfg[k]);
-      }
-    })
-    script.setAttribute('data-theme', volantis.giscus.Theme);
-    script.setAttribute('crossorigin', "anonymous");
-    HEAD.appendChild(script);
-  }
-
-  function dark_giscus() {
-    const HEAD = check_giscus();
-    if (!HEAD) return;
-
-    const message = {
-      setConfig: {
-        theme: volantis.giscus.Theme
-      }
-    };
-    const giscusIframe = document.querySelector('iframe.giscus-frame');
-    giscusIframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-  }
-  pjax_giscus();
-  volantis.pjax.push(pjax_giscus);
-  volantis.dark.push(dark_giscus);
+  volantis.js('https://unpkg.com/gitalk@1/dist/gitalk.min.js').then(pjax_gitalk)
+  volantis.pjax.push(pjax_gitalk);
 </script>
 
     
