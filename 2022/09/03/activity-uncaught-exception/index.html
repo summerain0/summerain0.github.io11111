@@ -1794,7 +1794,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669556528181),
+    lastupdate: new Date(1669564133481),
     sidebar: {
       for_page: ["repos","blogger","music","category","tagcloud","lastupdate","webinfo"],
       for_post: ["repos","toc","category","tagcloud"],
@@ -2859,16 +2859,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2022/09/03/file-uncaught-exception/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>自定义全局异常捕捉——保存至本地</p>
-          <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
+        <a class='prev' href='/2022/09/04/material-design-materialbutton/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android Material Design的使用（一）- MaterialButton篇</p>
+          <p class='content'>前言本系列将要介绍Material design库包含的所有控件，当前文章基于 com.google.android.material:material:1.4.0 讲解
+MaterialBut...</p>
         </a>
       
       
-        <a class='next' href='/2022/09/03/android-package-info-compat/'>
-          <p class='title'>还在用老办法获取版本号或者签名信息吗？不如试试PackageInfoCompat吧！<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>前言之前的很久时间，我们都是使用以下的方式获取应用的版本号，但在Android SDK 28中，谷歌弃用了该方式，推荐使用getLongVersionCode()
-12345678910publ...</p>
+        <a class='next' href='/2022/09/03/file-uncaught-exception/'>
+          <p class='title'>自定义全局异常捕捉——保存至本地<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言开发安卓的小伙伴都遇到过APP突然崩溃,无响应的情况.如果发生在自己手中,那么还可以通过IDE查看错误日志,但是实际都是发生在用户手中,那么这个时候产生崩溃,无响应ANR异常就很麻烦.无从下...</p>
         </a>
       
     </div>
@@ -3163,6 +3163,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <p><a href="/">Copyright © 2017-现在 summerain0</a></p>
 
         </div>
+      
+    
+      
+        
+          <div><p><span id="timeDate">载入天数…</span><span id="times">载入时分秒…</span></p>
+</div>
+        
       
     
     <!-- Custom Files footer begin-->
@@ -4194,6 +4201,26 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
         next.style.display = articleNext ? 'block' : 'none';
         next.title = articleNext ? articleNext.innerText : null;
     }, 'prevNext', false)
+
+    function createTime() {
+        const nowTime = new Date();
+        const startTime = new Date("1/1/2017 00:00:00");
+        const time = (nowTime - startTime) / 1000;
+        let day = Math.floor(time / 60 / 60 / 24);
+        let hour = Math.floor(time / 60 / 60 - (24 * day));
+        let minute = Math.floor(time / 60 - (24 * 60 * day) - (60 * hour));
+        let seconds = Math.floor(time - (24 * 60 * 60 * day) - (60 * 60 * hour) - (60 * minute));
+        if (day < 10) day = "0" + day;
+        if (hour < 10) hour = "0" + hour;
+        if (minute < 10) minute = "0" + minute;
+        if (seconds < 10) seconds = "0" + seconds;
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 " + day + " 天 ";
+        document.getElementById("times").innerHTML = hour + " 小时 " + minute + " 分 " + seconds + " 秒";
+    }
+
+    setInterval(function () {
+        createTime()
+    }, 1000);
 </script>
     <!-- Custom Files bodyEnd end-->
   </body>

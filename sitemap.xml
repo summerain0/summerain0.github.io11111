@@ -225,6 +225,13 @@
   </url>
   
   <url>
+    <loc>https://www.summerain0.club/tags/Steam%E6%B5%81/</loc>
+    <lastmod>2022-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.summerain0.club/tags/JetBrains/</loc>
     <lastmod>2022-11-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -254,13 +261,6 @@
   
   <url>
     <loc>https://www.summerain0.club/tags/%E5%AD%A6%E7%94%9F/</loc>
-    <lastmod>2022-11-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.summerain0.club/tags/Steam%E6%B5%81/</loc>
     <lastmod>2022-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -339,14 +339,14 @@
   </url>
   
   <url>
-    <loc>https://www.summerain0.club/categories/%E7%AC%94%E8%AE%B0/git/</loc>
+    <loc>https://www.summerain0.club/categories/%E6%95%99%E7%A8%8B/Java/</loc>
     <lastmod>2022-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.summerain0.club/categories/%E6%95%99%E7%A8%8B/Java/</loc>
+    <loc>https://www.summerain0.club/categories/%E7%AC%94%E8%AE%B0/git/</loc>
     <lastmod>2022-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
